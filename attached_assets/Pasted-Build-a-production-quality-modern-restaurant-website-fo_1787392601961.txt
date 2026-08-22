@@ -1,0 +1,562 @@
+Build a production-quality, modern restaurant website for "Pizza World Galaxy", a fast-food restaurant located in Qasim Bela, Multan, Pakistan.
+
+IMPORTANT BUSINESS CONTEXT:
+This website is being developed as a professional website proposal for the restaurant. It should look like a real, polished commercial website suitable for an actual restaurant.
+
+Do NOT describe the website as a demo anywhere on the customer-facing website.
+
+Do NOT invent business facts, menu items, prices, opening hours, awards, history, owner information, claims, or customer testimonials.
+
+Where information is missing, create a clearly designed placeholder that can easily be replaced later.
+
+BUSINESS INFORMATION CURRENTLY AVAILABLE:
+
+Restaurant:
+Pizza World Galaxy
+
+Category:
+Fast Food Restaurant
+
+Address:
+5CR4+QMR, near Rewaj Marquee, Qasim Bela, Bhutta Colony, Multan, Pakistan
+
+Phone:
++92 308 4859955
+
+Google rating:
+4.0 / 5 from 9 reviews
+
+Price indication:
+Rs 1–2,000 per person
+
+Services:
+
+* Dine-in
+* Takeout
+* Delivery
+
+Currently known food items from customer information:
+
+* Pizza
+* Chicken Paratha Roll
+* Loaded Fries
+* Cheese Burger
+
+Current listing status:
+Open, closes at 3 AM.
+Do not create a complete weekly schedule unless exact hours are provided.
+
+PRIMARY GOAL:
+
+Create a website that makes visitors want to order food.
+
+The website must:
+
+* Look premium and trustworthy
+* Work perfectly on mobile
+* Load quickly
+* Have clear calls to action
+* Make the menu easy to browse
+* Make calling/order contact extremely easy
+* Make the location easy to find
+* Be easy for the restaurant owner to update later
+* Be suitable for search engines
+* Feel like a professionally designed Pakistani restaurant website rather than an AI-generated template
+
+DESIGN DIRECTION:
+
+Create a premium modern fast-food aesthetic.
+
+Use:
+
+* Strong food photography
+* High-quality visual hierarchy
+* Elegant typography
+* Generous spacing
+* Modern cards
+* Tasteful rounded corners
+* Subtle shadows
+* Smooth but lightweight animations
+* Professional hover states
+* Clear buttons
+* Excellent contrast
+* Responsive layouts
+
+The design should feel:
+"Modern + premium + hungry-inducing + local restaurant"
+
+Avoid:
+
+* Generic AI-looking layouts
+* Excessive gradients
+* Excessive animations
+* Clutter
+* Huge amounts of text
+* Stock-photo-looking visual presentation
+* Unnecessary sections
+* Fake statistics
+* Fake reviews
+* Fake discounts
+
+COLOR SYSTEM:
+
+Create a strong restaurant color palette based around warm food-oriented tones while maintaining accessibility and professional contrast.
+
+Use the colors consistently for:
+
+* Primary buttons
+* Secondary buttons
+* Navigation
+* Cards
+* Highlights
+* Footer
+* Important information
+
+Do not use too many colors.
+
+SITE STRUCTURE:
+
+Create the following sections/pages.
+
+==================================================
+
+1. NAVIGATION
+   ==================================================
+
+Create a responsive sticky navigation.
+
+Desktop:
+
+* Logo / restaurant name
+* Home
+* Menu
+* About
+* Reviews
+* Contact
+* Order Now button
+
+Mobile:
+
+* Hamburger menu
+* Prominent Order Now button
+
+Navigation should remain easy to use while scrolling.
+
+Create a visually powerful restaurant hero.
+
+Headline:
+"Pizza World Galaxy"
+
+Supporting headline:
+"Big Flavour. Fresh Food. Made for You."
+
+Use food-focused imagery.
+
+Primary CTA:
+"Order Now"
+
+Secondary CTA:
+"View Menu"
+
+Additional quick information:
+
+* Dine-in
+* Takeout
+* Delivery
+
+Include phone CTA:
+"Call +92 308 4859955"
+
+The hero must immediately communicate:
+WHAT the business is
+WHERE it is
+HOW to order
+
+Do not make unsupported claims such as "best pizza in Multan."
+
+Create a compact information section below the hero.
+
+Include:
+
+* Dine-in
+* Takeout
+* Delivery
+* Location
+* Phone
+
+Use attractive icons.
+
+Make phone and directions clickable.
+
+Create a premium menu section.
+
+The complete official menu is not currently available.
+
+DO NOT invent products or prices.
+
+Use the currently known items only where appropriate:
+
+* Pizza
+* Chicken Paratha Roll
+* Loaded Fries
+* Cheese Burger
+
+Create a menu architecture that can later contain categories such as:
+
+* Pizzas
+* Burgers
+* Rolls
+* Fries
+* Drinks
+* Deals
+
+But do not populate categories with invented products.
+
+For unavailable information, use elegant placeholders such as:
+"Menu details coming soon"
+
+Make every menu item card capable of supporting:
+
+* Image
+* Name
+* Description
+* Price
+* Add to Order button
+
+Design the system so adding 50+ menu items later is easy.
+
+Create a "Customer Favorites" or "Popular Picks" section.
+
+Only feature items supported by the information provided.
+
+Chicken Paratha Roll
+Loaded Fries
+Pizza
+
+Do not claim these are officially the restaurant's best sellers.
+
+Use wording such as:
+"Popular from customer feedback"
+
+Create a short, visually attractive About section.
+
+Use only known facts:
+
+* Fast food restaurant
+* Located in Qasim Bela, Multan
+* Dine-in
+* Takeout
+* Delivery
+
+Do not invent:
+
+* founding year
+* founder
+* chef
+* restaurant history
+* awards
+* number of customers
+* years of experience
+
+Keep the text concise.
+
+Create a professional reviews section.
+
+Display:
+
+4.0 / 5
+9 Google reviews
+
+Use only the supplied customer feedback.
+
+Do not fabricate reviews.
+
+Do not copy long portions of reviews.
+
+Create a "View all reviews" button that can later link to the restaurant's Google listing.
+
+If a Google review link cannot be verified, use a placeholder that can easily be replaced.
+
+Create a beautiful location section.
+
+Display:
+
+Pizza World Galaxy
+
+5CR4+QMR, near Rewaj Marquee,
+Qasim Bela, Bhutta Colony,
+Multan, Pakistan
+
+Add:
+"Get Directions"
+
+Make the address clickable where possible.
+
+Add a map area.
+
+Do not claim exact coordinates unless verified.
+
+Create a highly visible ordering section.
+
+Primary goal:
+Make it extremely easy for customers to contact the restaurant.
+
+Include:
+"Order Now"
+
+Buttons:
+
+* Call to Order
+* WhatsApp Order
+* View Menu
+
+IMPORTANT:
+The restaurant's phone number is:
++92 308 4859955
+
+Create the WhatsApp button using the appropriate international number format.
+
+Do not claim that WhatsApp ordering is officially supported until the restaurant confirms it.
+
+Therefore make the WhatsApp functionality easy to enable/disable.
+
+Create a professional order-request interface.
+
+Fields:
+
+* Customer name
+* Phone number
+* Order type:
+
+  * Delivery
+  * Takeout
+  * Dine-in
+* Selected items
+* Quantity
+* Delivery address
+* Additional instructions
+
+Add:
+"Place Order"
+
+For now, make the form functional on the frontend and structure the code so it can later connect to:
+
+* WhatsApp
+* Email
+* Google Sheets
+* Database
+* n8n webhook
+
+DO NOT add fake payment processing.
+
+DO NOT collect unnecessary personal information.
+
+Create a clean contact section.
+
+Phone:
++92 308 4859955
+
+Location:
+Qasim Bela, Multan
+
+Add:
+
+* Call button
+* Directions button
+* WhatsApp button
+* Contact form
+
+The available listing information says:
+"Open · Closes 3 AM"
+
+Do not invent the exact weekly schedule.
+
+Create a professional opening-hours component with editable data.
+
+Use:
+"Hours may vary — please call to confirm."
+
+Make the hours easy to update once the restaurant confirms them.
+
+Create a professional footer containing:
+
+Pizza World Galaxy
+
+Navigation:
+
+* Home
+* Menu
+* About
+* Reviews
+* Contact
+
+Contact:
++92 308 4859955
+
+Location:
+Qasim Bela, Multan
+
+Include social-media icons as placeholders that can be connected once official accounts are confirmed.
+
+Mobile is a PRIMARY priority.
+
+Optimize for:
+
+* 360px
+* 375px
+* 390px
+* 414px
+
+On mobile:
+
+* Keep buttons large enough to tap
+* Keep text readable
+* Avoid horizontal scrolling
+* Optimize image sizes
+* Use sticky bottom actions if appropriate:
+  "Call"
+  "Order"
+
+Make the ordering process extremely easy on a phone.
+
+Optimize the website for speed.
+
+Requirements:
+
+* Lazy-load images where appropriate
+* Use appropriately sized images
+* Avoid unnecessary libraries
+* Minimize JavaScript
+* Avoid heavy animations
+* Avoid unnecessary network requests
+* Optimize mobile performance
+
+Implement proper SEO.
+
+Create:
+
+* Unique page title
+* Meta description
+* Open Graph metadata
+* Proper heading hierarchy
+* Descriptive image alt text
+* Canonical URL placeholder
+* Local business structured data / Restaurant schema
+
+Use factual information only.
+
+Potential SEO title:
+"Pizza World Galaxy | Fast Food Restaurant in Qasim Bela, Multan"
+
+Potential description:
+"Pizza World Galaxy in Qasim Bela, Multan. Dine-in, takeaway and delivery. Explore the menu and contact the restaurant to order."
+
+Do not use misleading keywords.
+
+Follow accessibility best practices.
+
+Requirements:
+
+* Semantic HTML
+* Proper labels for forms
+* Keyboard navigation
+* Visible focus states
+* Good color contrast
+* Alt text
+* Accessible buttons
+* Accessible mobile menu
+* Do not rely only on color to communicate information
+
+Do not expose secrets in frontend code.
+
+Use environment variables for future:
+
+* API keys
+* Webhook URLs
+* Database credentials
+
+Do not hard-code secrets.
+
+Validate and sanitize form inputs.
+
+Keep the project clean and maintainable.
+
+Use reusable components.
+
+Separate:
+
+* UI components
+* Data
+* Configuration
+* Utilities
+
+Create a central restaurant configuration/data file so that the owner information can easily be changed later.
+
+For example:
+restaurant name
+phone
+address
+hours
+menu
+social links
+
+Do not duplicate these values throughout the code.
+
+Structure the project so it can later connect to n8n.
+
+Possible future integrations:
+
+* New order → n8n webhook
+* Order → Google Sheets
+* Order → WhatsApp notification
+* New order → restaurant Telegram notification
+* Daily sales report
+* Customer order confirmation
+* Menu management
+* Order status updates
+
+Do NOT implement paid integrations now.
+
+Create clean integration points so these can be added later.
+
+Create professional states for:
+
+* Form submission success
+* Form submission failure
+* Missing required fields
+* Invalid phone number
+* Empty cart
+* Network error
+
+Never leave the user wondering whether their order worked.
+
+Before finishing:
+
+Test every button.
+
+Test:
+
+* Navigation
+* Mobile menu
+* Menu sections
+* Order buttons
+* Phone link
+* WhatsApp link
+* Directions link
+* Forms
+* Responsive layout
+* No horizontal scrolling
+* No console errors
+* No broken images
+* No broken links
+
+Check desktop and mobile layouts.
+
+Fix all obvious UI problems before completing the project.
+
+IMPORTANT:
+Do not stop at generating a basic template.
+
+Build a polished, production-quality restaurant website with strong visual hierarchy, excellent mobile UX, fast loading, clean code, accessibility, SEO, and future n8n integration capability.
+
+The final result should be something I could confidently show to the restaurant owner as a professional website proposal. no mistakes one time perfect.
