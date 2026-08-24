@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Pizza World Galaxy"
+description = "A polished, mobile-first restaurant website for Pizza World Galaxy in Qasim Bela, Multan, with menu browsing, order requests, contact actions, location details, and owner-friendly content placeholders."
+version = "1.0.0"
+id = "artifacts/pizza-world-galaxy"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24927
+
+[services.development]
+run = "pnpm --filter @workspace/pizza-world-galaxy run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/pizza-world-galaxy", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/pizza-world-galaxy/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24927"
+BASE_PATH = "/"

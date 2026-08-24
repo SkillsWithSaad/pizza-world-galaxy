@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+:root {
+  --background: 38 54% 97%;
+  --foreground: 24 12% 14%;
+  --card: 39 100% 99%;
+  --card-foreground: 24 12% 14%;
+  --popover: 39 100% 99%;
+  --popover-foreground: 24 12% 14%;
+  --primary: 10 63% 49%;
+  --primary-foreground: 38 54% 97%;
+  --secondary: 35 33% 91%;
+  --secondary-foreground: 24 12% 14%;
+  --muted: 35 25% 91%;
+  --muted-foreground: 25 12% 46%;
+  --accent: 39 84% 59%;
+  --accent-foreground: 25 38% 21%;
+  --destructive: 4 65% 42%;
+  --destructive-foreground: 38 54% 97%;
+  --border: 31 31% 86%;
+  --input: 31 31% 86%;
+  --ring: 10 63% 49%;
+  --radius: .65rem;
+  --app-font-sans: 'DM Sans', ui-sans-serif, sans-serif;
+  --app-font-serif: 'Fraunces', Georgia, serif;
+  --app-font-mono: 'DM Sans', ui-monospace, monospace;
+}
+
+.dark {
+  --background: 24 12% 14%;
+  --foreground: 38 54% 97%;
+  --card: 25 14% 19%;
+  --card-foreground: 38 54% 97%;
+  --popover: 25 14% 19%;
+  --popover-foreground: 38 54% 97%;
+  --primary: 12 64% 56%;
+  --primary-foreground: 24 12% 14%;
+  --secondary: 25 15% 24%;
+  --secondary-foreground: 38 54% 97%;
+  --muted: 25 15% 24%;
+  --muted-foreground: 33 17% 69%;
+  --accent: 39 84% 59%;
+  --accent-foreground: 25 38% 21%;
+  --destructive: 4 65% 52%;
+  --destructive-foreground: 38 54% 97%;
+  --border: 25 15% 30%;
+  --input: 25 15% 30%;
+  --ring: 12 64% 56%;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --font-sans: var(--app-font-sans);
+  --font-serif: var(--app-font-serif);
+}
+
+@layer base {
+  * { box-sizing: border-box; border-color: hsl(var(--border)); }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; min-width: 320px; background: hsl(var(--background)); color: hsl(var(--foreground)); font-family: var(--app-font-sans); }
+  button, input, select, textarea { font: inherit; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 3px solid hsl(var(--accent)); outline-offset: 3px; }
+}
+
+.pwg-site { --ink:#25211e; --muted:#756b64; --cream:#fbf7f1; --paper:#fffdf9; --line:#eadfd4; --tomato:#c94a2f; --tomato-deep:#9c3424; --saffron:#efa93f; --sage:#557064; background:var(--cream); color:var(--ink); overflow-x:hidden; }
+.pwg-site * { box-sizing:border-box; }
+.pwg-shell { width:min(1180px,calc(100% - 40px)); margin-inline:auto; }
+.pwg-kicker { display:inline-flex; align-items:center; gap:8px; color:var(--tomato); font-size:11px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+.pwg-kicker:before { content:""; width:22px; height:2px; background:var(--saffron); }
+.pwg-heading { margin:14px 0 0; font-family:var(--app-font-serif); font-weight:700; letter-spacing:-.045em; line-height:.98; color:var(--ink); }
+.pwg-topbar { background:var(--ink); color:#fef6e8; font-size:12px; }
+.pwg-topbar-inner { min-height:34px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.pwg-topbar-note { display:flex; align-items:center; gap:7px; }
+.pwg-topbar strong { color:var(--saffron); }
+.pwg-nav { position:sticky; top:0; z-index:20; background:rgba(251,247,241,.94); border-bottom:1px solid rgba(234,223,212,.88); backdrop-filter:blur(14px); }
+.pwg-nav-inner { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.pwg-brand { display:inline-flex; align-items:center; gap:10px; border:0; background:transparent; color:var(--ink); font-family:var(--app-font-serif); font-size:20px; font-weight:700; letter-spacing:-.04em; white-space:nowrap; cursor:pointer; }
+.pwg-brand-mark { position:relative; display:grid; place-items:center; width:38px; height:38px; border-radius:50%; background:var(--tomato); color:#fff8ee; font-family:var(--app-font-sans); font-size:17px; font-weight:900; }
+.pwg-brand-mark:after { content:""; position:absolute; inset:5px; border:1px solid rgba(255,255,255,.45); border-radius:50%; }
+.pwg-navlinks { display:flex; align-items:center; gap:27px; color:#615750; font-size:13px; font-weight:700; }
+.pwg-navlinks a { transition:color .2s ease; }
+.pwg-navlinks a:hover { color:var(--tomato); }
+.pwg-order-pill,.pwg-btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:999px; background:var(--tomato); color:#fff9f1; padding:13px 19px; font-size:13px; font-weight:800; box-shadow:0 8px 22px rgba(156,52,36,.16); transition:transform .2s ease,background .2s ease,box-shadow .2s ease; cursor:pointer; }
+.pwg-order-pill:hover,.pwg-btn-primary:hover { transform:translateY(-2px); background:var(--tomato-deep); box-shadow:0 12px 25px rgba(156,52,36,.22); }
+.pwg-menu-toggle { display:none; border:0; background:none; color:var(--ink); padding:8px; cursor:pointer; }
+.pwg-hero { position:relative; padding:72px 0 94px; }
+.pwg-hero:before { content:""; position:absolute; width:480px; height:480px; right:-250px; top:20px; border:1px solid rgba(201,74,47,.14); border-radius:50%; box-shadow:0 0 0 32px rgba(201,74,47,.025),0 0 0 65px rgba(201,74,47,.018); pointer-events:none; }
+.pwg-hero-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(390px,.92fr); align-items:center; gap:62px; }
+.pwg-hero-copy { position:relative; z-index:1; }
+.pwg-hero h1 { max-width:590px; font-size:clamp(47px,6.2vw,82px); }
+.pwg-hero-lede { max-width:490px; margin:23px 0 0; color:var(--muted); font-size:16px; line-height:1.7; }
+.pwg-hero-lede strong { color:var(--ink); }
+.pwg-actions { display:flex; flex-wrap:wrap; gap:11px; margin-top:28px; }
+.pwg-btn-secondary { display:inline-flex; align-items:center; justify-content:center; gap:9px; border:1px solid #d9c8ba; border-radius:999px; background:transparent; color:var(--ink); padding:12px 18px; font-size:13px; font-weight:800; transition:background .2s ease,border-color .2s ease,transform .2s ease; cursor:pointer; }
+.pwg-btn-secondary:hover { background:#f2e9dd; border-color:#bda996; transform:translateY(-2px); }
+.pwg-trust-row { display:flex; align-items:center; flex-wrap:wrap; gap:17px; margin-top:31px; }
+.pwg-rating { display:flex; align-items:center; gap:7px; font-size:13px; font-weight:800; }
+.pwg-rating span { color:var(--muted); font-weight:600; }
+.pwg-stars { display:flex; gap:2px; color:var(--saffron); }
+.pwg-stars svg { fill:currentColor; }
+.pwg-dot { width:4px; height:4px; border-radius:50%; background:#c9b9aa; }
+.pwg-hero-art { position:relative; min-height:435px; }
+.pwg-image-wrap { position:absolute; right:0; top:0; width:min(100%,450px); aspect-ratio:1; border-radius:45% 55% 48% 52% / 47% 42% 58% 53%; overflow:hidden; border:10px solid #f6eadc; box-shadow:0 22px 50px rgba(70,42,28,.15); transform:rotate(4deg); }
+.pwg-image-wrap img { width:100%; height:100%; object-fit:cover; transform:rotate(-4deg) scale(1.08); }
+.pwg-hero-sticker { position:absolute; left:10px; top:36px; z-index:2; width:112px; height:112px; display:grid; place-items:center; text-align:center; border-radius:50%; background:var(--saffron); color:#633d17; font-size:11px; font-weight:900; line-height:1.2; text-transform:uppercase; letter-spacing:.08em; transform:rotate(-11deg); box-shadow:0 8px 18px rgba(112,72,18,.15); }
+.pwg-hero-sticker:after { content:""; position:absolute; inset:7px; border:1px dashed rgba(99,61,23,.45); border-radius:50%; }
+.pwg-location-chip { position:absolute; right:10px; bottom:18px; z-index:2; display:flex; align-items:center; gap:10px; padding:12px 15px; border:1px solid rgba(234,223,212,.8); background:rgba(255,253,249,.93); border-radius:12px; box-shadow:0 12px 26px rgba(70,42,28,.12); font-size:12px; font-weight:800; }
+.pwg-location-chip svg { color:var(--tomato); }
+.pwg-band { background:var(--tomato); color:#fff7ec; }
+.pwg-quick { display:grid; grid-template-columns:repeat(4,1fr); }
+.pwg-quick-item { display:flex; align-items:center; gap:13px; min-height:92px; padding:15px 24px; border-right:1px solid rgba(255,255,255,.2); }
+.pwg-quick-item:last-child { border-right:0; }
+.pwg-quick-icon { display:grid; place-items:center; width:35px; height:35px; border-radius:50%; background:rgba(255,255,255,.13); color:var(--saffron); flex:none; }
+.pwg-quick-label { display:block; color:rgba(255,247,236,.65); font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.pwg-quick-value { display:block; margin-top:3px; font-size:13px; font-weight:800; line-height:1.3; }
+.pwg-section { padding:98px 0; }
+.pwg-section-head { display:flex; align-items:end; justify-content:space-between; gap:25px; margin-bottom:35px; }
+.pwg-section-head h2 { font-size:clamp(38px,4.6vw,59px); }
+.pwg-section-intro { max-width:380px; color:var(--muted); font-size:14px; line-height:1.65; }
+.pwg-category-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:27px; }
+.pwg-category { border:1px solid var(--line); border-radius:999px; padding:9px 15px; background:transparent; color:var(--muted); font-size:12px; font-weight:800; cursor:pointer; transition:color .2s ease,border-color .2s ease,background .2s ease; }
+.pwg-category:hover,.pwg-category.active { border-color:var(--tomato); background:#f8e7dc; color:var(--tomato-deep); }
+.pwg-menu-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; }
+.pwg-menu-card { overflow:hidden; border:1px solid var(--line); border-radius:15px; background:var(--paper); transition:transform .25s ease,box-shadow .25s ease; }
+.pwg-menu-card:hover { transform:translateY(-5px); box-shadow:0 17px 35px rgba(75,43,26,.1); }
+.pwg-card-img { position:relative; height:176px; overflow:hidden; background:#ecd8c8; }
+.pwg-card-img img { width:100%; height:100%; object-fit:cover; filter:saturate(.9); transition:transform .35s ease; }
+.pwg-menu-card:hover .pwg-card-img img { transform:scale(1.06); }
+.pwg-card-img:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(37,33,30,.18)); pointer-events:none; }
+.pwg-category-tag { position:absolute; left:12px; top:12px; z-index:1; border-radius:999px; padding:5px 8px; background:#fff7e8; color:var(--tomato-deep); font-size:10px; font-weight:900; letter-spacing:.04em; text-transform:uppercase; }
+.pwg-card-body { padding:17px; }
+.pwg-card-body h3 { margin:0; font-family:var(--app-font-serif); font-size:20px; letter-spacing:-.03em; }
+.pwg-card-note { min-height:38px; margin:8px 0 16px; color:var(--muted); font-size:12px; line-height:1.5; }
+.pwg-card-foot { display:flex; align-items:center; justify-content:space-between; gap:10px; border-top:1px solid #f1e8df; padding-top:13px; }
+.pwg-price-note { color:#9b8a7d; font-size:11px; font-weight:700; }
+.pwg-add { display:inline-flex; align-items:center; gap:5px; border:0; border-radius:999px; padding:8px 10px; background:var(--ink); color:#fff7ed; font-size:11px; font-weight:800; cursor:pointer; transition:background .2s ease,transform .2s ease; }
+.pwg-add:hover { background:var(--tomato); transform:translateY(-1px); }
+.pwg-small-note { margin-top:19px; color:#927f71; font-size:11px; font-style:italic; }
+.pwg-split { display:grid; grid-template-columns:.93fr 1.07fr; gap:72px; align-items:center; }
+.pwg-about-panel { position:relative; padding:46px; border-radius:19px; background:#e8eee5; overflow:hidden; }
+.pwg-about-panel:after { content:""; position:absolute; right:-75px; bottom:-90px; width:240px; height:240px; border:1px solid rgba(85,112,100,.25); border-radius:50%; box-shadow:0 0 0 24px rgba(85,112,100,.06),0 0 0 48px rgba(85,112,100,.045); }
+.pwg-about-panel .pwg-heading { font-size:clamp(34px,4vw,53px); max-width:430px; }
+.pwg-about-copy { margin:24px 0 0; max-width:490px; color:#59685e; font-size:15px; line-height:1.8; }
+.pwg-fact-list { display:grid; gap:15px; margin-top:29px; }
+.pwg-fact { display:flex; align-items:flex-start; gap:12px; color:#4e5f55; font-size:13px; line-height:1.45; }
+.pwg-fact svg { flex:none; margin-top:2px; color:var(--sage); }
+.pwg-feedback h2 { font-size:clamp(37px,4.2vw,54px); max-width:480px; }
+.pwg-feedback-lede { max-width:450px; margin-top:18px; color:var(--muted); line-height:1.7; font-size:14px; }
+.pwg-feedback-card { display:grid; grid-template-columns:145px 1fr; gap:25px; align-items:center; margin-top:32px; padding:20px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.pwg-big-rating { font-family:var(--app-font-serif); font-size:53px; font-weight:700; line-height:1; }
+.pwg-google { margin-top:7px; color:var(--muted); font-size:11px; font-weight:700; }
+.pwg-quote { position:relative; margin:0; padding-left:24px; color:#574d46; font-family:var(--app-font-serif); font-size:17px; line-height:1.5; }
+.pwg-quote:before { content:"“"; position:absolute; left:0; top:-8px; color:var(--tomato); font-size:33px; }
+.pwg-review-btn { margin-top:24px; display:inline-flex; align-items:center; gap:8px; border:0; border-bottom:1px solid var(--tomato); background:none; padding:4px 0; color:var(--tomato-deep); font-size:13px; font-weight:800; cursor:pointer; }
+.pwg-order-section { background:#f1e5d8; }
+.pwg-order-grid { display:grid; grid-template-columns:.82fr 1.18fr; align-items:start; gap:58px; }
+.pwg-order-copy h2 { max-width:420px; font-size:clamp(39px,4.8vw,62px); }
+.pwg-order-copy>p { max-width:395px; margin-top:20px; color:var(--muted); font-size:14px; line-height:1.7; }
+.pwg-order-contact { display:flex; align-items:center; gap:10px; margin-top:29px; color:var(--tomato-deep); font-size:15px; font-weight:900; }
+.pwg-order-contact svg { padding:8px; width:34px; height:34px; border-radius:50%; background:var(--tomato); color:#fff6ec; }
+.pwg-form-card { padding:29px; border:1px solid #e4d4c4; border-radius:18px; background:var(--paper); box-shadow:0 15px 38px rgba(82,51,32,.07); }
+.pwg-form-heading { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:22px; }
+.pwg-form-heading h3 { margin:0; font-family:var(--app-font-serif); font-size:24px; letter-spacing:-.03em; }
+.pwg-form-heading span { color:var(--muted); font-size:11px; font-weight:700; }
+.pwg-form-row { display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+.pwg-field { display:grid; gap:7px; margin-bottom:15px; }
+.pwg-field label { color:#5e5147; font-size:11px; font-weight:800; letter-spacing:.04em; }
+.pwg-field input,.pwg-field select,.pwg-field textarea { width:100%; border:1px solid #decec0; border-radius:9px; outline:0; background:#fffcf7; color:var(--ink); padding:11px 12px; font-size:13px; transition:border-color .2s ease,box-shadow .2s ease; }
+.pwg-field textarea { min-height:83px; resize:vertical; }
+.pwg-field input:focus,.pwg-field select:focus,.pwg-field textarea:focus { border-color:var(--tomato); box-shadow:0 0 0 3px rgba(201,74,47,.12); }
+.pwg-field input::placeholder,.pwg-field textarea::placeholder { color:#b5a79b; }
+.pwg-selected { border:1px solid #ecdfd3; border-radius:10px; background:#fdf8f1; padding:11px; min-height:40px; }
+.pwg-selected-empty { color:#9b8b7d; font-size:12px; }
+.pwg-selected-item { display:flex; align-items:center; justify-content:space-between; gap:9px; color:#54483e; font-size:12px; font-weight:700; }
+.pwg-selected-item+.pwg-selected-item { margin-top:8px; padding-top:8px; border-top:1px solid #eee2d7; }
+.pwg-quantity { display:inline-flex; align-items:center; gap:7px; color:var(--tomato-deep); }
+.pwg-quantity button { display:grid; place-items:center; width:21px; height:21px; border:1px solid #e5cfc0; border-radius:50%; background:#fff; color:var(--tomato-deep); cursor:pointer; }
+.pwg-submit { width:100%; margin-top:4px; padding:14px 18px; }
+.pwg-form-feedback { display:flex; align-items:flex-start; gap:9px; margin-top:13px; border-radius:9px; padding:11px 12px; font-size:12px; line-height:1.5; }
+.pwg-form-feedback.error { background:#fbe7e1; color:#9c3424; }
+.pwg-form-feedback.success { background:#e4f0e3; color:#40634a; }
+.pwg-form-feedback svg { flex:none; margin-top:1px; }
+.pwg-location-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:18px; }
+.pwg-address-card,.pwg-map-placeholder { border:1px solid var(--line); border-radius:17px; background:var(--paper); }
+.pwg-address-card { padding:31px; }
+.pwg-address-card h3 { margin:15px 0 9px; font-family:var(--app-font-serif); font-size:27px; }
+.pwg-address-card p { color:var(--muted); font-size:14px; line-height:1.65; }
+.pwg-address-icon { display:grid; place-items:center; width:43px; height:43px; border-radius:12px; background:#f7dfd5; color:var(--tomato); }
+.pwg-address-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+.pwg-map-placeholder { position:relative; min-height:265px; overflow:hidden; background:#e6ece4; }
+.pwg-map-grid { position:absolute; inset:-30px; opacity:.46; transform:rotate(-8deg); background-image:linear-gradient(25deg,transparent 46%,#c7d3c6 47%,#c7d3c6 49%,transparent 50%),linear-gradient(115deg,transparent 42%,#d0dacf 43%,#d0dacf 45%,transparent 46%),linear-gradient(80deg,transparent 49%,#d0dacf 50%,#d0dacf 51%,transparent 52%); background-size:95px 80px,120px 100px,170px 140px; }
+.pwg-map-label { position:absolute; left:20px; top:20px; padding:8px 11px; border-radius:8px; background:rgba(255,253,249,.88); color:#5f6e62; font-size:11px; font-weight:800; }
+.pwg-map-pin { position:absolute; left:51%; top:50%; display:grid; place-items:center; width:47px; height:47px; transform:translate(-50%,-50%) rotate(-45deg); border:5px solid rgba(255,253,249,.9); border-radius:50% 50% 50% 0; background:var(--tomato); color:#fff; box-shadow:0 9px 18px rgba(75,43,26,.2); }
+.pwg-map-pin svg { transform:rotate(45deg); }
+.pwg-map-disclaimer { position:absolute; bottom:15px; left:20px; right:20px; color:#748076; font-size:11px; }
+.pwg-footer { padding:47px 0 25px; background:var(--ink); color:#f7eadd; }
+.pwg-footer-grid { display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:35px; }
+.pwg-footer .pwg-brand { color:#fff7eb; }
+.pwg-footer-copy { max-width:255px; margin-top:15px; color:#bcb0a5; font-size:12px; line-height:1.7; }
+.pwg-footer h4 { margin:3px 0 15px; color:#fff7eb; font-size:11px; text-transform:uppercase; letter-spacing:.14em; }
+.pwg-footer nav { display:grid; gap:9px; color:#bcb0a5; font-size:12px; }
+.pwg-footer nav a:hover { color:var(--saffron); }
+.pwg-socials { display:flex; gap:8px; }
+.pwg-social { display:grid; place-items:center; width:31px; height:31px; border:1px solid #655a52; border-radius:50%; color:#d4c6b8; }
+.pwg-social[aria-disabled="true"] { cursor:not-allowed; opacity:.65; }
+.pwg-social:hover:not([aria-disabled="true"]) { border-color:var(--saffron); color:var(--saffron); }
+.pwg-footer-bottom { display:flex; justify-content:space-between; gap:15px; margin-top:42px; padding-top:18px; border-top:1px solid #4b443f; color:#8f847b; font-size:11px; }
+@media (max-width:850px) { .pwg-hero-grid,.pwg-split,.pwg-order-grid { grid-template-columns:1fr; gap:43px; } .pwg-hero { padding-top:52px; } .pwg-hero-art { min-height:390px; max-width:570px; width:100%; margin:auto; } .pwg-menu-grid { grid-template-columns:repeat(2,1fr); } .pwg-order-copy { max-width:590px; } .pwg-location-grid { grid-template-columns:1fr; } }
+@media (max-width:640px) { .pwg-shell { width:min(calc(100% - 28px),520px); } .pwg-topbar-inner { min-height:40px; font-size:10px; } .pwg-topbar-note:last-child { display:none; } .pwg-nav-inner { min-height:65px; } .pwg-navlinks { position:absolute; left:14px; right:14px; top:68px; display:none; flex-direction:column; align-items:stretch; gap:0; padding:7px; border:1px solid var(--line); border-radius:13px; background:var(--paper); box-shadow:0 14px 28px rgba(75,43,26,.12); } .pwg-navlinks.open { display:flex; } .pwg-navlinks a { padding:12px; border-radius:8px; } .pwg-navlinks a:hover { background:#f8e7dc; } .pwg-order-pill { padding:10px 13px; font-size:11px; } .pwg-menu-toggle { display:block; } .pwg-hero { padding:42px 0 63px; } .pwg-hero h1 { font-size:clamp(45px,13vw,67px); } .pwg-hero-lede { font-size:14px; } .pwg-hero-art { min-height:310px; } .pwg-image-wrap { width:82%; right:6%; border-width:7px; } .pwg-hero-sticker { width:88px; height:88px; left:0; top:19px; font-size:9px; } .pwg-location-chip { right:0; bottom:4px; padding:9px 11px; font-size:10px; } .pwg-quick { grid-template-columns:1fr 1fr; } .pwg-quick-item { min-height:78px; padding:13px 15px; border-bottom:1px solid rgba(255,255,255,.2); } .pwg-quick-item:nth-child(2) { border-right:0; } .pwg-quick-item:nth-child(3),.pwg-quick-item:nth-child(4) { border-bottom:0; } .pwg-section { padding:67px 0; } .pwg-section-head { display:block; margin-bottom:28px; } .pwg-section-intro { margin-top:15px; } .pwg-menu-grid { gap:10px; } .pwg-card-img { height:125px; } .pwg-card-body { padding:12px; } .pwg-card-body h3 { font-size:17px; } .pwg-card-note { min-height:46px; font-size:11px; } .pwg-card-foot { display:block; } .pwg-price-note { display:block; margin-bottom:9px; } .pwg-add { width:100%; justify-content:center; } .pwg-about-panel { padding:27px 23px; } .pwg-feedback-card { grid-template-columns:1fr; gap:14px; } .pwg-order-grid { gap:34px; } .pwg-form-card { padding:19px 15px; } .pwg-form-row { grid-template-columns:1fr; gap:0; } .pwg-address-card { padding:23px; } .pwg-footer-grid { grid-template-columns:1fr 1fr; gap:29px 17px; } .pwg-footer-grid>:first-child { grid-column:1 / -1; } .pwg-footer-bottom { display:block; line-height:1.7; } .pwg-footer-bottom span { display:block; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .pwg-site *, .pwg-site *:before, .pwg-site *:after { transition-duration:.01ms !important; animation-duration:.01ms !important; } }
